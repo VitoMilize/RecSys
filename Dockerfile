@@ -18,7 +18,6 @@ RUN gdown https://drive.google.com/uc?id=1FVBYQNA-Sh9Ly-c88hUWQQUlsf2U4itc && \
 COPY model.py .
 COPY main.py .
 COPY dataset dataset
-COPY pretrained_checkpoint pretrained_checkpoint
 
 EXPOSE 8000
 
