@@ -10,6 +10,10 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
+RUN gdown https://drive.google.com/uc?id=1FVBYQNA-Sh9Ly-c88hUWQQUlsf2U4itc && \
+    unzip pretrained_checkpoint.zip -d pretrained_checkpoint && \
+    rm pretrained_checkpoint.zip
+
 # Копируем весь проект
 COPY model.py .
 COPY main.py .
