@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  recommender:
+    build:
+      context: .
+    container_name: my_recommender_container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./pretrained_checkpoint:/pretrained_checkpoint
+    restart: unless-stopped
