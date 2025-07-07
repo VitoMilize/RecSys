@@ -7,7 +7,7 @@ from typing import List, Optional
 from model import My_Rec_Model
 import uvicorn
 
-PRETRAINED_CHECKPOINT_DIR = "./pretrained_checkpoint"
+PRETRAINED_CHECKPOINT_DIR = "pretrained_checkpoint"
 PRETRAINED_CHECKPOINT = os.path.join(PRETRAINED_CHECKPOINT_DIR, "best_mae_epoch_9.ckpt")
 
 app = FastAPI()
