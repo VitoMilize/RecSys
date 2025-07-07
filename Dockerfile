@@ -3,7 +3,8 @@ FROM python:3.6-slim
 
 # Установка зависимостей системы
 RUN apt-get update && apt-get install -y \
-    build-essential && \
+    build-essential \
+    unzip && \
     rm -rf /var/lib/apt/lists/*
 
 # Python-зависимости
